@@ -8,3 +8,4 @@ RUN yes | certmgr -ssl -m https://go.microsoft.com \
 RUN ["dnu", "restore"]
 EXPOSE 80
 ENTRYPOINT ["dnx", "/app", "kestrel"]
+CMD ["-D"]
